@@ -1,4 +1,5 @@
 ﻿$(function () {
+    
     $("#gotop").click(function () {
         jQuery("html,body").animate({
             scrollTop: 0
@@ -12,6 +13,13 @@
             $('#gotop').stop().fadeOut("fast");
         }
     });
-    window.ga.trackView('Screen Links');
+    $.ajax({
+        type: "POST",
+        url: "http://140.115.197.16/",
+        data: "school=NUTN&app=南大懶人包OuOb",
+        error: function () {
+            alert("此APP僅提供導覽功能，您能需要連接網路來瀏覽其他網頁");
+        }
+    });
 });
 

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="io.cordova.myappa7e6e4" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="zh-TW">
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="tw.edu.nutn.csie" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="zh-TW">
   <name>南大懶人包OuOb</name>
   <description>此空白專案使用 Apache Cordova 協助您建置將多種行動平台作為目標的應用程式，平台範圍包括: Android、iOS 及 Windows 通用平台。</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">請在此輸入姓名</author>
