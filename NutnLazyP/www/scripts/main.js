@@ -12,6 +12,6 @@
             $('#gotop').stop().fadeOut("fast");
         }
     });
-    
+    window.ga.trackView('Screen Links');
 });
 

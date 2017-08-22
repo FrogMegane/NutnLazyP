@@ -13,8 +13,9 @@
         document.addEventListener('resume', onResume.bind(this), false);
 
         // TODO: Cordova 已載入。請在這裡執行任何需要 Cordova 的初始化作業。
+        window.ga.startTrackerWithId('UA-105095072-1',0);
+        window.ga.trackView('Screen Title');
         
-
 
         var parentElement = document.getElementById('deviceready');
         var listeningElement = parentElement.querySelector('.listening');
@@ -27,6 +28,7 @@
 
     function onPause() {
         // TODO: 這個應用程式已暫停。請在這裡儲存應用程式狀態。
+        window.ga.dispatch();
     };
 
     function onResume() {
