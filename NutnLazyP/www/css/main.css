@@ -1,0 +1,81 @@
+﻿@media only screen and (max-width: 700px) {
+    #box0 .metro {
+        height: 150px;
+    }
+}
+
+.showUrl {
+    word-break: break-all;
+}
+
+.test {
+    background-color: red;
+}
+
+.row h4 {
+    color: mediumblue;
+}
+
+.break {
+    word-break: break-all;
+}
+
+p {
+    font-size: 16px;
+}
+
+body {
+    min-width: 360px;
+    background-color: #E4E4E4;
+    font-family: Microsoft JhengHei UI,Arial;
+}
+
+.bg-1 {
+    background-color: rgba(38, 243, 168, 0.61); /*miku*/
+    color: #ffffff;
+}
+
+.bg-2 {
+    background-color: rgba(207, 63, 248, 0.71); /* light purple */
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: rgba(253, 255, 24, 0.61); /* light yellow */
+    color: #ce2b93;
+}
+
+.bg-4 {
+    background-color: rgba(36, 154, 255, 0.70); /*blueblue */
+    color: #ffffff;
+}
+
+.mwrapper {
+    padding: 1px;
+    background-color: transparent;
+}
+
+.metro {
+    border: 3px solid grey;
+    padding: 5px;
+    height: 100%;
+}
+
+    .metro:hover {
+        background-color: #93FF93; /*LightSkyGreen*/
+        border-color: whitesmoke;
+    }
+
+    .metro * {
+        color: black;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .metro a {
+        text-decoration: none;
+    }
+
+#main {
+    margin-bottom: 80px;
+}
