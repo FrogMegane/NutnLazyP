@@ -13,13 +13,11 @@
         document.addEventListener('resume', onResume.bind(this), false);
 
         // TODO: Cordova 已載入。請在這裡執行任何需要 Cordova 的初始化作業。
-        window.ga.startTrackerWithId('UA-105095072-1',0);
-        window.ga.trackView('Screen Title', '', true)
-        window.ga.dispatch();
+        window.ga.startTrackerWithId('UA-105095072-1');
+        window.ga.trackView('Screen Title')
 
         var toNext = function () {
-            window.ga.trackEvent('UX', 'Click', 'a', 1);
-            window.ga.dispatch();
+            window.ga.trackEvent('UX', 'Click', 'a');
         }
         document.getElementById('toNext').addEventListener('click',toNext);
 
