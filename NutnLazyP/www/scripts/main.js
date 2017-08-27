@@ -1,4 +1,37 @@
-﻿$(function () {
+﻿(function () {
+    "use strict";
+
+    document.addEventListener('deviceready', onDeviceReady.bind(this), false);
+
+    function onDeviceReady() {
+        // 處理 Cordova 暫停與繼續事件
+        document.addEventListener('pause', onPause.bind(this), false);
+        document.addEventListener('resume', onResume.bind(this), false);
+
+        // TODO: Cordova 已載入。請在這裡執行任何需要 Cordova 的初始化作業。
+        window.ga.startTrackerWithId('UA-105095072-1', 30);
+        window.ga.trackView('Screen Links')
+
+        function clickLabel() {
+            window.ga.trackEvent('Links', 'Click', this.title);
+            window.ga.dispatch();
+        }
+        var as = document.getElementsByTagName("a");
+        for (var i = 0; i < as.length; ++i) {
+            as[i].addEventListener('click', clickLabel);
+        }
+    };
+
+    function onPause() {
+        // TODO: 這個應用程式已暫停。請在這裡儲存應用程式狀態。
+
+    };
+
+    function onResume() {
+        // TODO: 這個應用程式已重新啟動。請在這裡還原應用程式狀態。
+    };
+})();
+$(function () {
     
     $("#gotop").click(function () {
         jQuery("html,body").animate({
